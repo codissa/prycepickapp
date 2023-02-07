@@ -2,19 +2,26 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export const usePeopleFetch = (query) => {
+
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
     fetchUsers( );
   }, []);
+  const [url,setUrl] = useState("http://ec2-18-157-180-237.eu-central-1.compute.amazonaws.com:8080/Search/GetJson/")
 
   async function fetchUsers() {
+    //debugger;
+    let searchQuery;
     setIsLoading(true);
-    const response = await axios.get(`https://randomuser.me/api/?results=25&page=1`);
-    setIsLoading(false);
+    // axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+    // axios.defaults.headers.get['Access-Control-Allow-Origin']= '*';
+    searchQuery= url + query;
+    console.log(searchQuery);
+    const response = await axios.get(searchQuery, { timeout: 50000 });
+    // setIsLoading(false);
     console.log(response);
-    // setUsers(users.concat(response.data.results));
-    // users.map(user=> user.isFavorite=false);
+    setUsers(response.data);
 
   }
 

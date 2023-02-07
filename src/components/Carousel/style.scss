@@ -1,13 +1,13 @@
 .CarouselElement{
   display: flex;
   flex-direction: column;
-  background: #e3e1e1;
-height:23vh;
-  max-height: 23vh;
+  background: #f6f6f6;
+  height:26vh;
+  max-height: 26vh;
   border-color: rgba(48, 48, 48, 0.52);
   border-width: 4px;
   border-style: solid;
-
+  overflow: hidden;
 }
 .title{
   display: flex;
@@ -15,7 +15,6 @@ height:23vh;
   justify-content: center;
   align-items: center;
   padding-top: 1vh;
-
 }
 .image{
   display: flex;

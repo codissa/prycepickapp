@@ -1,0 +1,26 @@
+.deals{
+  display: flex;
+  width:100%;
+  height: 50%;
+  padding-Right: 5%;
+  padding-Left: 5%;
+  justify-Content: space-between;
+  max-width: fit-content;
+}
+.deals.title{
+  height: auto;
+  background: transparent;
+  width: auto;
+  border:  solid;
+  max-Width:15%;
+
+}
+
+.heading{
+  align-self: flex-start;
+}
+.deals-grid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

@@ -14,7 +14,7 @@ export const Content = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  padding-block-start: 100px;
+  
 `;
 
 export const Header = styled.div`
@@ -27,4 +27,15 @@ export const Form = styled.div`
   gap: 25px;
   max-width: 400px;
   width: 100%;
+`;
+
+export const EndBar = styled.div`
+    width : 70%;
+    height :1%;
+    background-color : blue;
+    position : absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 `;
