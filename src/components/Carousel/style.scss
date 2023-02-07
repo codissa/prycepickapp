@@ -1,0 +1,28 @@
+.CarouselElement{
+  display: flex;
+  flex-direction: column;
+  background: #e3e1e1;
+height:23vh;
+  max-height: 23vh;
+  border-color: rgba(48, 48, 48, 0.52);
+  border-width: 4px;
+  border-style: solid;
+
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1vh;
+
+}
+.image{
+  display: flex;
+  padding-top: 1vh;
+  flex-direction: column;
+  mix-blend-mode: multiply;
+  max-height: 19vh;
+  width: auto;
+  height: auto;
+ }
