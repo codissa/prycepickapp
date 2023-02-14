@@ -6,15 +6,19 @@
   "license": "MIT",
   "repository": "https://github.com/codissa/PrycePick",
   "dependencies": {
-    "@emotion/react": "^11.8.1",
-    "@emotion/styled": "^11.8.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.2",
-    "@mui/icons-material": "^5.5.0",
+    "@mui/icons-material": "^5.11.9",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "font-awesome": "^4.7.0",
     "node-fetch": "^2.6.1",
     "react": "^17.0.2",
     "react-animated-heart": "^0.0.7",
@@ -57,7 +61,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.5.4",
-    "@mui/material": "^5.8.4",
+    "@mui/material": "^5.11.9",
     "gh-pages": "^3.2.3"
   }
 }

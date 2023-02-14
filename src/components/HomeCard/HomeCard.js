@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
 import './style.scss';
-import Heart from "react-animated-heart";
+import HeartIcon from 'components/HeartIcon/HeartIcon';
 
 export default class HomeCard extends React.Component{
-    
+    constructor(props) {
+        super(props);
+        this.state = {
+            isClick: false,
+        };
+    }
     render(){
         return <div>
         <div className='box'>
@@ -12,11 +17,15 @@ export default class HomeCard extends React.Component{
 
         </div>
         <div>{this.props.name}</div>
-        <div className='bold'>{this.props.price}</div>
+        <div className='bold'>{this.props.price}
+        <HeartIcon></HeartIcon></div>
+        
         <div>
-        </div>
 
         </div>
+        </div>
+
+
     }
 }
 

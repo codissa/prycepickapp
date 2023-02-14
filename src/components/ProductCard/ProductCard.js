@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 //import * as S from "./style";
 import "./main.scss";
-import StarRatings from "react-star-ratings";
-import Heart from "react-animated-heart";
 import { Link } from "react-router-dom";
+import HeartIcon from "components/HeartIcon/HeartIcon";
 
  export default function ProductCard ({product})
 {
@@ -48,7 +47,7 @@ import { Link } from "react-router-dom";
             >buy</Link>
             </button>
             <div className="heart">
-            <Heart isClick={isClick} onClick={() => setClick(!isClick)} />
+            <HeartIcon></HeartIcon>
             </div>
             
         </div>
