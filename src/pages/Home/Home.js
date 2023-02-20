@@ -10,7 +10,6 @@ import "./style.scss";
 import welcome from "../../assets/welcome.png";
 import HomeCard from "components/HomeCard/HomeCard";
 import { HomeCardClass } from "models/HomeCardClass";
-import Heart from "react-animated-heart";
 
 
 // import PryceLogo from './assets/PryceLogo.jpeg';
