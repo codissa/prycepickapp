@@ -4,7 +4,7 @@ import '../components/ProductCard/main.scss'
 
 export default function Post({query, begin, end, getLength}) {
     const [post, getPost] = useState([])
-    let API = 'http://ec2-18-157-180-237.eu-central-1.compute.amazonaws.com:8080/Search/GetJson/' ;
+    let API = 'http://52.59.220.46:8080/Search/GetJson/' ;
     // console.log({query});
     // const API = 'https://randomuser.me/api/?results=25&page=1';
     const fetchPost = (query) => {
